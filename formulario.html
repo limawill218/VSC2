@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h2>Formulário 1 - Dados Pessoais</h2>
+    <form action="" method="get">
+        <fieldset>
+            <legend>Dados da Pessoa</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="Nome" id="nome"> <br><br>
+
+                <label>Email:</label>
+                <input type="email" name="email" id="email" required placeholder="limawill@gmail.com"> <br><br>
+
+                <label>Data de Ida:</label>
+                <input type="date" name="dataIda"> <br><br>
+
+                <label>Data de Volta:</label>
+                <input type="date" name="dataVolta"> <br><br>
+
+                <label>Quantidade de Pessoas:</label>
+                <input type="number" name="pessoas"> <br><br>
+
+                <label for="comentario">Comentário</label><br>
+                <textarea rows="5" name="Comentário" id="comentario"></textarea><br><br>
+
+                <label>Senha:</label>
+                <input type="password" name="senha" required pattern="[A-Z]{3}[0-9]{4}"> <br><br>
+
+                <label>Telefone:</label>
+                <input type="number" name="telefone" placeholder="(88) 98818-4870"> <br><br>
+
+                <input type="button" value="Submit">
+        </fieldset>
+    </form>
+    <h2>Formulário 2 - Caixa de Seleção</h2>
+    <form action="" method="post">
+        <fieldset> <!--Um agrupamento de campos dentro do formulário!-->
+            <legend>Qual é o seu meio de transporte favorito?</legend>
+            <label for="veiculo1">
+                <input type="checkbox" name="veiculo1" value="Bicicleta">
+                Bicicleta
+            </label><br>
+            <label for="veiculo2"></label>
+                <input type="checkbox" name="veiculo2" value="Carro">
+                Carro
+            </label><br>
+            <label for="veiculo3"></label>
+                <input type="checkbox" name="veiculo3" value="Barco">
+                Barco
+            </label><br><br>
+            <button>Salvar</button> 
+        </fieldset>
+    </form>
+    <!-- Checkbox Escolhe Vários!!! Radio só pode escolher um!!!-->
+    <h2>Formulário 3 - Botões de Radio</h2>
+    <form action="" method="post">
+        <fieldset> <!--Um agrupamento de campos dentro do formulário!-->
+            <legend>Escolha sua Linguaguem Favorita</legend>
+            <label>
+                <input type="radio" name="linguagem" value="HTML">
+                HTML
+            </label><br>
+            <label>
+                <input type="radio" name="linguagem" value="CSS">
+                CSS
+            </label><br>
+            <label>
+                <input type="radio" name="linguagem" value="JavaScript">
+                JavaScript
+            </label><br>
+            <label>
+                <input type="radio" name="linguagem" value="Python">
+                Python
+            </label><br><br>
+            <button>Salvar</button> 
+        </fieldset>
+    </form>
+    <h2>Formulário 4 - Lista Suspensa</h2>
+    <form action="" method="post">
+        <fieldset> <!--Um agrupamento de campos dentro do formulário!-->
+            <legend>Escolha sua Montadora</legend>
+                <select name="Carro">
+                    <option value="volkswagen">Volkswagen</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="renault">Renault</option>
+                    <option value="rbr">Red Bull Racing</option>    
+                </select>
+            <button>Salvar</button> 
+        </fieldset>
+    </form>
+</body>
+</html>
